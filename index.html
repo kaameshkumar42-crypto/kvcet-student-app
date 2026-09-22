@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KVCET - Student Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>KVCET Student Database</h1>
+            <p>மாணவர்கள் விவர மேலாண்மை தளம்</p>
+        </header>
+
+        <section class="form-section">
+            <h2>புதிய மாணவரை சேர்க்க</h2>
+            <form id="studentForm">
+                <input type="text" id="name" placeholder="Student Name" required>
+                <input type="text" id="roll_no" placeholder="Roll Number" required>
+                <input type="text" id="department" placeholder="Department (CSE, AIDS, ECE...)" required>
+                <input type="email" id="email" placeholder="Email Address">
+                <button type="submit">சேமி (Save)</button>
+            </form>
+        </section>
+
+        <section class="table-section">
+            <h2>மாணவர்கள் பட்டியல்</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>பெயர்</th>
+                            <th>Roll No</th>
+                            <th>துறை</th>
+                            <th>Email</th>
+                            <th>செயல்முறை</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentTableBody"></tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
